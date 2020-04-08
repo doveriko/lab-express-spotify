@@ -1,10 +1,7 @@
 <div>
-    <main>
-        <h1 class="innegable">results</h1>
-        {{#each artistArray}}
-        <h2>{{this.name}}</h2>
-        <img src="{{{this.images.0.url}}}" alt="spotify-band-img">
-        <a href="/albums/{{this.id}}">View Albums</a>
-        {{/each}}
-    </main>
+    {{#each artistsArray }}
+    <h2>{{this.name}}</h2>
+    <img src="{{this.images.1.url}}" alt="">
+    <a href="/albums/{{this.id}}"><button>View albums</button></a>
+    {{/each}}
 </div>
